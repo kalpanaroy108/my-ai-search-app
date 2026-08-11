@@ -33,7 +33,7 @@ if submit_button and user_query:
     
     with st.spinner("Google Gemini AI aapke liye jawab dhoondh raha hai..."):
         try:
-            # Yahan humne naya model 'gemini-1.5-flash' daal diya hai jo 100% working hai
+            # Updated to 1.5-flash model
             model = genai.GenerativeModel('gemini-1.5-flash')
             prompt = f"You are a helpful AI assistant built by Kalpana Kumari. Answer this user query naturally. User Query: {user_query}"
             response = model.generate_content(prompt)
